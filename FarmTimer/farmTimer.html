@@ -1,0 +1,64 @@
+<DOCTYPE html>
+
+  <html>
+
+<!--CSS and heading-->    
+  <head>
+    <title>Farm Timer by Brian Luu</title>
+    <link rel="stylesheet" href="Style.css">
+	<meta charset="utf-8"/>
+	 <script src="FarmScript.js"></script> 
+  </head>
+
+  <body>
+<!--Title-->
+    <center>
+      <h1 id="title">Farm Timer</h1>
+    </center>
+
+<!--Text fields, prompts user to enter seconds-->
+    <center>
+      <h id="prompt1">
+        Input amount of seconds to farm:
+      </h>
+      <h id="prompt2">
+        Input amount of seconds to loot:
+        <h>
+    </center>
+        
+<!--Actual input fields, this is where the java script goes-->
+    <center>
+      <input type="text" class="textfield" value="" id="farmInput" name="farmInput" placeholder="value here" onkeypress="return isNumber(event)" />
+      <input type="text" class="textfield" value="" id="lootInput" name="lootInput" placeholder="value here" onkeypress="return isNumber(event)" />
+    </center>
+
+<!--Active Timer is what's currently counting down
+    starts counting down from farmTimer, then switches to lootTimer, switches, etc.
+    goes on forever until user presses stop button-->
+    <center>
+      <h id="actText" class="textTimer">Active Timer:</h>
+      <input type="text" id="actBox" value="" class="fieldleft" placeholder="0:00" readonly>
+    </center>
+        
+<!--Accumulated Timer is a cumulative timer that counts up.
+    Goes on forever until user presses stop button-->
+    <center>
+      <h id="accText" class="textTimer">Accumulated Timer:</h>
+      <input type="text" id="accBox" value="" class="fieldleft" placeholder="0:00" readonly>
+    </center>
+
+<!--Buttons; user can press these-->
+    <center>
+      <!--Start button should start the timer starting with the farmTimer. Should also reset and start the timer        if pressed while already counting down if timer is already running-->
+      <input type="button" class="button" id="but1" value="Start" onclick="start()">
+	  <!--Stop button should stop all timers and pause all current values in each textbox. Pressing stop again shouldn't do anything.-->
+      <input type="button" class="button" id="but2" value="Stop" onclick="stop()">
+    </center>
+
+<!--Author-->
+    <center>
+      <h1 id="author">by Brian Luu</h1>
+    </center>
+  </body>
+
+  </html>

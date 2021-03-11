@@ -1,0 +1,150 @@
+body {
+  background-color: #303030;
+}
+/*removes outline from all selectable textboxes*/
+input{
+outline-style:none;
+}
+#title {
+  font-family: Arial;
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  top: 100px;
+}
+#prompt1 {
+  margin-top: 30px;
+  font-family: Arial;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  left: 50%;
+  margin-left: -300px;
+}
+#prompt2 {
+  margin-top: 30px;
+  font-family: Arial;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  right: 50%;
+  margin-right: -300px;
+}
+#farmInput {
+  margin-top: 60px;
+  border: 3px solid #6bc5e3;
+  padding: 5px 10px;
+  border-radius: 100px;
+  position: fixed;
+  left: 50%;
+  margin-left: -250px;
+  
+}
+#farmInput:focus {
+	border: 3px solid #f5c358;
+}
+#lootInput {
+  margin-top: 60px;
+  border: 3px solid #6bc5e3;
+  padding: 5px 10px;
+  border-radius: 100px;
+  position: fixed;
+  right: 50%;
+  margin-right: -250px;
+}
+#lootInput:focus {
+	border: 3px solid #f5c358;
+}
+
+#actText {
+  font-family: Arial;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  margin-top: 150px;
+  left: 50%;
+  margin-left: -148px;
+}
+
+#accText {
+  font-family: Arial;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  margin-top: 195px;
+  left: 50%;
+  margin-left: -200px;
+}
+
+#actBox {
+  font-family: Arial;
+  font-size: 18px;
+  border: 3px solid #6bc5ec;
+  border-radius: 100px;
+  padding: 5px 10px;
+  position: fixed;
+  margin-top: 140px;
+  right: 50%;
+  margin-right: -200px;
+}
+
+#accBox {
+  font-family: Arial;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: 3px solid #6bc5ec;
+  border-radius: 100px;
+  padding: 5px 10px;
+  position: fixed;
+  margin-top: 185px;
+  right: 50%;
+  margin-right: -200px;
+}
+
+.button {
+  font-family: Arial;
+  position: fixed;
+  border: 4px solid #6bc5e3;
+  border-radius: 100px;
+  font-size: 36px;
+  padding: 5px 20px;
+  font-weight: bold;
+  color: #303030;
+  box-shadow: 0 9px #616161;
+}
+
+.button:hover {
+  background-color: #c4c4c4;
+  box-shadow: 0 9px #616161;
+  border: 4px solid #f5c358;
+}
+
+.button:active {
+  background-color: #c4c4c4;
+  transform: translateY(4px);
+  box-shadow: 0 5px #404040;
+}
+
+#but1 {
+  position: fixed;
+  margin-top: 280px;
+  left: 50%;
+  margin-left: -150px;
+}
+
+#but2 {
+  position: fixed;
+  margin-top: 280px;
+  right: 50%;
+  margin-right: -150px;
+}
+
+#author {
+  font-family: Arial;
+  font-size: 16px;
+  color: white;
+  position: fixed;
+  margin-top: 500px;
+  left: 50%;
+  margin-left: -50px;
+}
